@@ -1,0 +1,65 @@
+; Hello World with decimals, 
+; Using mov ah, dl to read the character
+; and using int 21h to print the value of dl
+
+.code
+
+    mov dl, 61      ; Adding 61 + 11 to give a solution of "H" 
+    add dl, 11  
+    mov ah, 2h
+    int 21h
+    
+    mov dl, 100     ; Adding 100 + 1 to give a solution of "e"
+    add dl, 1
+    mov ah, 2h
+    int 21h
+    
+    mov dl, 100
+    add dl, 8
+    mov ah, 2h
+    int 21h
+    
+    mov dl, 100     ; Adding 100 + 8 to give a solution of "l"
+    add dl, 8
+    mov ah, 2h
+    int 21h 
+    
+    mov dl, 100     ; Adding 100 + 11 to give a solution of "o"
+    add dl, 11
+    mov ah, 2h
+    int 21h
+    
+    mov dl, 21      ; Adding 21 + 11 to give a solution of "space"
+    add dl, 11
+    mov ah, 2h
+    int 21h
+    
+    mov dl, 77      ; Adding 77 + 10 to give a solution of "W"
+    add dl, 10
+    mov ah, 2h
+    int 21h
+    
+    mov dl, 100
+    add dl, 11
+    mov ah, 2h
+    int 21h
+    
+    mov dl, 100    ; Adding 100 + 14 to give a solution of "r"
+    add dl, 14
+    mov ah, 2h
+    int 21h
+    
+    mov dl, 99
+    add dl, 9
+    mov ah, 2h
+    int 21h
+    
+    mov dl, 50     ; Adding 50 + 50 to give a solution of "d"
+    add dl, 50
+    mov ah, 2h
+    int 21h 
+    
+    endp
+    end
+
+    
